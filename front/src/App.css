@@ -54,6 +54,10 @@ h5 {
 	text-align: justify;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 /* Header */
 .App-header {
 	background: url("./img/background_cine.jpg") no-repeat fixed center;
@@ -96,10 +100,7 @@ h5 {
 }
 
 /* Footer */
-footer {
-	background-color : #dbdde0;
-	color: white;
-}
+
 
 footer p {
 	color: #ffbd4a;				
@@ -113,4 +114,16 @@ footer p {
 	border-radius: 4px;
 	padding: 15px;
 	margin : 20px 0px;
+}
+
+/* Movie Detail */
+
+.movieDetail {
+	margin: 20px 0;
+}
+
+.popularYear {
+	border: 1px solid #ffbd4a;
+	border-radius: 4px;
+	margin : 70px 0px;
 }

@@ -6,6 +6,8 @@ import Home from './containers/Home';
 import Movies from './containers/Movies';
 import Recommendations from './containers/Recommendations';
 import Contact from './containers/Contact';
+import MovieDetail from './components/MovieDetail';
+import MovieYear from './components/MovieYear';
 
 class App extends Component {
 
@@ -22,8 +24,8 @@ class App extends Component {
                 </div>
                 <div className="col-xs-10">
                   <NavLink exact to="/" activeStyle={{textDecoration: 'underline'}} className="navlink">Home</NavLink>
-                  <NavLink to="/movies" activeStyle={{textDecoration: 'underline'}} className="navlink">Movies</NavLink>
-                  <NavLink to="/recommendations" activeStyle={{textDecoration: 'underline'}} className="navlink">Recommendations</NavLink>
+                  <NavLink to="/genres" activeStyle={{textDecoration: 'underline'}} className="navlink">Recommendations by genre</NavLink>
+                  <NavLink to="/recommendations" activeStyle={{textDecoration: 'underline'}} className="navlink">Recommendations by year</NavLink>
                   <NavLink to="/contact" activeStyle={{textDecoration: 'underline'}} className="navlink">Contact</NavLink>
                 </div>
               </nav>
@@ -32,9 +34,11 @@ class App extends Component {
 
           <Switch>
             <Route exact path="/" component={Home} />   
-            <Route path="/movies" component={Movies} />
+            <Route path="/genres" component={Movies} />
             <Route path="/recommendations" component={Recommendations} />
             <Route path="/contact" component={Contact} />
+            <Route path="/movie/:id" component={MovieDetail} />
+            <Route path="/year/:year" component={MovieYear} /> 
           </Switch>
 
           <footer>

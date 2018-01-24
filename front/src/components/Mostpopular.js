@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500/";
 
@@ -43,7 +44,9 @@ class MostPopular extends Component {
 						<p className = "text-left">Vote average : {this.state.items.vote_average} </p>
 						<p className = "text-left">Release date : {this.state.items.release_date} </p>
 						<p className="justify">{this.state.items.overview}</p>
+						<Link to={`/movie/${this.state.items.id}`} exact="true">Discover this movie</Link>
 					</div>
+					
 				</div>
 
 			</div>
