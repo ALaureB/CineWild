@@ -8,7 +8,7 @@ module.exports = {
             .get(`${api_base_request}discover/movie?sort_by=popularity.desc&include_adult=false&${api_key}`)
             .then(results => res.send(results.data.results[0]));
     },
-    
+   
     tenMostPopularMovie : (req, res) => {
         axios
             .get(`${api_base_request}discover/movie?sort_by=popularity.desc&include_adult=false&${api_key}`)

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 
+const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500/";
+
 class MostPopular extends Component {
 
 	constructor(props) {
@@ -30,11 +32,23 @@ class MostPopular extends Component {
 
 	render() {
 		return (
-			<div>
-				{this.state.items.title}
-				<br/>
-				{this.state.items.overview}
+			<div className="popular">
+				<h4>Current most popular movie</h4>
+				<div className ="row flex_to_center">
+					<div className="col-xs-4">
+						<img src={`${IMAGE_BASE_URL}${this.state.items.poster_path}`} alt={this.state.items.title}width="200vh"/>
+					</div>
+					<div className="col-xs-6">					
+						<h5>{this.state.items.title}</h5>
+						<p className = "text-left">Vote average : {this.state.items.vote_average} </p>
+						<p className = "text-left">Release date : {this.state.items.release_date} </p>
+						<p className="justify">{this.state.items.overview}</p>
+					</div>
+				</div>
+
 			</div>
+			
+
 		);
 	}
 }

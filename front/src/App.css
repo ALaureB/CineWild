@@ -18,11 +18,40 @@ body {
 	justify-content: center;
 }
 
+.flex_to_center_wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
 h2 {
 	font-size: 3.4em;
 	font-weight: bold;
 	margin-top: 10vh;
 	color: #ffbd4a;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #929aa8;
+}
+
+h4 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #ffbd4a;
+}
+
+h5 {
+	color: #929aa8;
+	font-weight: bold;
+	font-size:1.8em; 
+}
+
+.justify {
+	text-align: justify;
 }
 
 /* Header */
@@ -73,6 +102,15 @@ footer {
 }
 
 footer p {
-	color: #ffbd4a;
+	color: #ffbd4a;				
 	font-weight: bold;
+}
+
+/* Home page */
+
+.popular {
+	border: 1px solid #ffbd4a;
+	border-radius: 4px;
+	padding: 15px;
+	margin : 20px 0px;
 }
