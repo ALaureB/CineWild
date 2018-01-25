@@ -1,0 +1,129 @@
+/* Eléments généraux */
+
+body {
+	text-align: center;
+	color:black;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flex_to_center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex_to_center_wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+h2 {
+	font-size: 3.4em;
+	font-weight: bold;
+	margin-top: 10vh;
+	color: #ffbd4a;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #929aa8;
+}
+
+h4 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #ffbd4a;
+}
+
+h5 {
+	color: #929aa8;
+	font-weight: bold;
+	font-size:1.8em; 
+}
+
+.justify {
+	text-align: justify;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* Header */
+.App-header {
+	background: url("./img/background_cine.jpg") no-repeat fixed center;
+	background-size: cover;
+	height: 450px;
+	margin-bottom : 15px;
+}
+
+.App-header h1 {
+	color : white;
+	font-size: 8em;
+	margin-top: 0px;
+	text-align: center;
+	position: relative;
+	top: 280px;
+	font-weight: bold;
+}
+
+.App-header nav {
+	margin-top: 1vh;
+	display : flex;
+	flex-wrap: nowrap;
+	justify-content : center;
+	align-items : center;
+	position : relative;
+	top: 290px;
+}
+
+.navlink {
+	color:#929aa8;
+	padding-right: 5vw;
+	padding-left: 5vw; 
+	font-weight: bold; 
+	font-size: 1.2em;
+}
+
+#logo {
+	width : 80%;
+	margin-top: 5vh;
+}
+
+/* Footer */
+
+
+footer p {
+	color: #ffbd4a;				
+	font-weight: bold;
+}
+
+/* Home page */
+
+.popular {
+	border: 1px solid #ffbd4a;
+	border-radius: 4px;
+	padding: 15px;
+	margin : 20px 0px;
+}
+
+/* Movie Detail */
+
+.movieDetail {
+	margin: 20px 0;
+}
+
+.popularYear {
+	border: 1px solid #ffbd4a;
+	border-radius: 4px;
+	margin : 70px 0px;
+}
