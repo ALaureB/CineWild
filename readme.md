@@ -1,7 +1,7 @@
 # CineWild
 App built at the occasion of a 6 hours exam at the Wild Code School. We had to code back end in Node / Express and front end in React on a movie theme.
 
-## First setep : launch back end
+## First step : launch back end
 - open a terminal and go to the back folder
 - yarn
 - node bin/www
